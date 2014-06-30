@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/backgroundJS.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.jplayer.min.js"></script>
+        <title>Hello World</title>
+    </head>
+    <body>
+		<div id='overlay'>
+			<div id='logo'></div>
+		</div>
+		<div id="jquery_jplayer" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><object id="jp_flash_0" name="jp_flash_0" data="jplayer.swf" type="application/x-shockwave-flash" width="1" height="1" tabindex="-1" style="width: 0px; height: 0px;"><param name="flashvars" value="jQuery=jQuery&amp;id=jquery_jplayer&amp;vol=1&amp;muted=false"><param name="allowscriptaccess" value="always"><param name="bgcolor" value="#000000"><param name="wmode" value="window"></object></div>
+		<div id='songList'>
+			<ul>
+			</ul>
+			<span class='close'>
+				aizvērt sarakstu...
+			</span>
+		</div>
+        <div id="app">
+			<img src='img/logo.png' alt='Radio H2O' />
+			<div id='nowplaying'>
+				<div class='title'></div>
+				<div class='name'></div>
+			</div>
+			
+			<div id="jp_container_1" class="jp-audio-stream">
+				<div class="jp-type-single">
+					<div class="jp-gui jp-interface">
+						<div class="jp-controls">
+							<a href="javascript:;" onClick="playStream()" class="jp-play"></a>
+							<a href="javascript:;" class="jp-pause"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='bottom'>
+			<div class='button list'>
+				<img src='img/list.png' alt='l'/>
+				<div>Dziesmu saraksts</div>
+			</div>
+			<div class='button full'>
+				<img src='img/full.png' alt='f'/>
+				<div>Uz radioh2o.lv</div>
+			</div>
+		</div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
