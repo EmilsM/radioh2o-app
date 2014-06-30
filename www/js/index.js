@@ -20,11 +20,11 @@
 $( document ).ready(function() {
 	
 	
-	$.ajax({
-           type: "GET",
-           url: "http://radioh2o.lv/player/nowplaying.json",
-           success: function(data)
-           {
+	//$.ajax({
+      //     type: "GET",
+        //   url: "http://radioh2o.lv/player/nowplaying.json",
+          // success: function(data)
+           //{
 				 $(".button.list").click(function() {
 					$("#songList").show();
 				});
@@ -63,12 +63,12 @@ $( document ).ready(function() {
 				
 					
 				$("#overlay").hide();
-           },
-		   error: function(data)
-		   {
+      //     },
+		//   error: function(data)
+		//   {
 				return;
-		   }
-         });
+	//	   }
+    //     });
 });
 
 function refreshSongList() {
